@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Devonshire" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+		<title>Osmi mart</title>
+
+	</head>
+<body>
+	
+	<a id="menu" class="header__menu">
+        <div id="heart"></div>
+         
+        </a>
+	<nav id="drawer" class="nav"><img src="img/boy_girl.jpg" alt="fotka">
+		<audio autoplay>
+<!--   <source src="audio/Moves.ogg" type="audio/ogg"> -->
+  <source src="audio/ptica.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+		<div class="upper_text">
+			<h1 class="up">Sretan ti dan žena,</h1> 
+			<br>
+			<br>
+				<h1 class="down ">najslađa curice!</h1>
+
+			</div>
+		
+	</nav>
+	<main>
+		<p>Klikni na srce :)</p>
+	</main>
+
+	<script>
+		var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+		
+		menu.addEventListener('click', function(e) {
+			drawer.classList.toggle('open');
+			e.stopPropagation();
+		});
+		 // main.addEventListener('click', function() {
+   //      drawer.classList.remove('open');
+   //    });
+	</script>
+</body>
+</html>
